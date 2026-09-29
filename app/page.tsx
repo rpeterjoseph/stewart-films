@@ -1,4 +1,5 @@
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
+import FilmTile from "@/components/FilmTile";
 
 const BTN_PRIMARY =
   "inline-flex items-center gap-2 text-xs tracking-[0.15em] uppercase px-7 py-3.5 bg-accent text-white hover:bg-ink transition-colors";
@@ -9,7 +10,12 @@ const BTN_OUTLINE_LIGHT =
 const EYEBROW = "font-ui text-xs tracking-[0.3em] uppercase text-accent block";
 
 const FILMS = [
-  { title: "Joseph & Anna's Wedding", year: "2023", driveId: "1DOCu8oSeC79tIfV-GXwgeKjCVNIYbJZm" },
+  {
+    title: "Joseph & Anna's Wedding",
+    year: "2023",
+    driveId: "1DOCu8oSeC79tIfV-GXwgeKjCVNIYbJZm",
+    thumbnail: "/films/joseph-anna.webp",
+  },
   { title: "The Stanley's Wedding", year: "2024", driveId: "1IOYXCJJG4jhdNKFzAz8fe0XeJKjLBmOQ" },
   { title: "Alex & Shiloh's Wedding", year: "2025", driveId: "1oYVi-xn4EQJaj8EWWZgFdYS2eqdeIMWG" },
 ];
@@ -124,19 +130,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {FILMS.map((film) => (
               <div key={film.title}>
-                <div className="relative aspect-video">
-                  {film.driveId ? (
-                    <iframe
-                      src={`https://drive.google.com/file/d/${film.driveId}/preview`}
-                      className="absolute inset-0 w-full h-full border-0"
-                      allow="autoplay; fullscreen"
-                      allowFullScreen
-                      title={film.title}
-                    />
-                  ) : (
-                    <PhotoPlaceholder label="Video Placeholder" className="absolute inset-0" dark />
-                  )}
-                </div>
+                <FilmTile title={film.title} driveId={film.driveId} thumbnail={film.thumbnail} />
                 <div className="mt-5">
                   <div className="font-display text-lg">{film.title}</div>
                   <div className="font-ui text-[11px] tracking-[0.2em] uppercase text-accent mt-1">
