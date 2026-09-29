@@ -124,12 +124,12 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {FILMS.map((film) => (
               <div key={film.title}>
-                <div className="relative aspect-video overflow-hidden">
+                <div className="relative aspect-video">
                   {film.driveId ? (
                     <iframe
                       src={`https://drive.google.com/file/d/${film.driveId}/preview`}
                       className="absolute inset-0 w-full h-full border-0"
-                      allow="autoplay"
+                      allow="autoplay; fullscreen"
                       allowFullScreen
                       title={film.title}
                     />
