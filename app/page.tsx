@@ -1,193 +1,191 @@
-import Image from "next/image";
-import Link from "next/link";
-
-const FEATURES = [
+const PACKAGES = [
   {
-    title: "Cinematic Craft",
-    body: "Shot on professional cinema cameras with natural light and considered composition — every frame feels intentional.",
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <circle cx="12" cy="12" r="9" />
-        <path d="M10 8l6 4-6 4V8z" fill="currentColor" stroke="none" />
-      </svg>
-    ),
+    name: "In-State Package",
+    price: "$699",
+    body:
+      "Full-day wedding video coverage anywhere in South Carolina — hours of coverage, ceremony and reception, and an edited highlight film.",
   },
   {
-    title: "Unobtrusive Presence",
-    body: "You'll forget we're there. Our team moves quietly through your day so nothing feels staged or performed.",
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 21s-7-4.35-9.5-9C.8 8.2 3 4 7 4c2 0 3.6 1.2 5 3 1.4-1.8 3-3 5-3 4 0 6.2 4.2 4.5 8-2.5 4.65-9.5 9-9.5 9z" />
-      </svg>
-    ),
-  },
-  {
-    title: "Full-Day Coverage",
-    body: "From getting-ready light to the last dance, every meaningful beat of your day is captured, not just the highlights.",
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <rect x="4" y="4" width="16" height="16" rx="2" />
-        <path d="M8 2v4M16 2v4M4 10h16" />
-      </svg>
-    ),
+    name: "Out-of-State Package",
+    price: "$999",
+    body: "Same great coverage for weddings outside South Carolina, travel included.",
   },
 ];
 
-const FEATURED_FILMS = [
-  { name: "Elena & Marco", place: "Amalfi Coast, Italy", image: "https://picsum.photos/id/1011/700/900" },
-  { name: "Priya & Sam", place: "Hudson Valley, NY", image: "https://picsum.photos/id/1025/700/900" },
-  { name: "Grace & Noah", place: "Big Sur, California", image: "https://picsum.photos/id/1035/700/900" },
+const FAQS = [
+  {
+    q: "How much does a wedding videographer cost in Greenville, SC?",
+    a: "Rates in the Upstate typically run $1,500 or more. I offer full in-state coverage for $699, with flexible pricing available.",
+  },
+  {
+    q: "Do you travel outside South Carolina?",
+    a: "Yes — the out-of-state package is $999 and covers travel.",
+  },
+  {
+    q: "What areas do you serve?",
+    a: "Greenville, Spartanburg, Anderson, Easley, and the surrounding Upstate SC area, plus out-of-state weddings.",
+  },
+  {
+    q: "How far in advance should I book?",
+    a: "Honestly, it depends. The quicker the better! We can make something work.",
+  },
 ];
 
 export default function HomePage() {
   return (
     <>
-      <section
-        className="min-h-screen flex items-center relative bg-center bg-cover"
-        style={{
-          backgroundImage:
-            "linear-gradient(180deg, rgba(12,12,12,0.35) 0%, rgba(12,12,12,0.85) 100%), url('https://picsum.photos/id/1015/1800/1200')",
-        }}
-      >
-        <div className="mx-auto max-w-[1180px] px-8 w-full">
-          <div className="max-w-2xl pt-24">
-            <span className="font-ui text-xs tracking-[0.35em] uppercase text-gold block mb-5">
-              Wedding Films &middot; Est. 2014
+      <section id="home" className="py-28 sm:py-36 text-center">
+        <div className="mx-auto max-w-[720px] px-6">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight">
+            Capture Your Wedding Without Breaking The Bank
+          </h1>
+
+          <div className="mt-14 flex flex-col sm:flex-row justify-center gap-10 sm:gap-16">
+            <div>
+              <div className="font-ui text-xs tracking-[0.15em] uppercase text-ink-muted">
+                In-State Package
+              </div>
+              <div className="font-display text-3xl mt-1.5">$699</div>
+            </div>
+            <div>
+              <div className="font-ui text-xs tracking-[0.15em] uppercase text-ink-muted">
+                Out-of-State Package
+              </div>
+              <div className="font-display text-3xl mt-1.5">$999</div>
+            </div>
+          </div>
+
+          <p className="mt-8 text-ink-muted">
+            Willing to work with the price! Call or text me.
+          </p>
+
+          <div className="mt-12 inline-flex items-baseline gap-4 border-t border-b border-line py-5 px-8">
+            <span className="font-ui text-xs tracking-[0.15em] uppercase text-ink-muted">
+              Market Price <span className="line-through">$1500+</span>
             </span>
-            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-medium leading-tight">
-              Your love story, told like a film.
-            </h1>
-            <p className="mt-7 mb-10 text-xl sm:text-2xl text-ink-muted max-w-xl">
-              We craft timeless, emotionally honest wedding films for couples
-              across the country — the kind you&rsquo;ll still watch on your
-              25th anniversary.
+            <span className="font-display text-2xl text-accent">Our Price $699</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="py-24 border-t border-line">
+        <div className="mx-auto max-w-[720px] px-6">
+          <h2 className="font-display text-3xl sm:text-4xl mb-8">About</h2>
+
+          <div className="space-y-5 text-lg text-ink-muted">
+            <p>
+              Hey, I&rsquo;m Stewart Ramakuri, a wedding videographer based in
+              Greenville, SC. I grew up in Hyderabad, India, where I got my
+              start behind the camera doing anything but weddings —
+              recording my dad&rsquo;s sermons for YouTube, filming church
+              events, playing keys, and generally messing around with every
+              creative outlet I could find at home and in church.
             </p>
-            <div className="flex flex-wrap gap-5">
-              <Link
-                href="/portfolio"
-                className="inline-flex items-center gap-2.5 font-ui text-[13px] tracking-[0.2em] uppercase px-8 py-4 bg-gold text-[#14120f] border border-gold hover:bg-transparent hover:text-ink transition-colors"
-              >
-                Watch Our Films
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2.5 font-ui text-[13px] tracking-[0.2em] uppercase px-8 py-4 border border-gold hover:bg-gold hover:text-[#14120f] transition-colors"
-              >
-                Check Availability
-              </Link>
+            <p>
+              That early, scrappy experience taught me something a lot of
+              videographers learn the expensive way: it&rsquo;s not about
+              the gear, it&rsquo;s about knowing what to look for and when
+              to press record. Somewhere along the way, capturing
+              once-in-a-lifetime moments became more than a skill — it
+              became something I genuinely care about.
+            </p>
+            <p>
+              Today I bring 15+ years of that experience to weddings across
+              Greenville and the Upstate of South Carolina, with the same
+              goal I&rsquo;ve always had: capture the moment the way it
+              actually felt.
+            </p>
+          </div>
+
+          <div className="mt-12 pt-10 border-t border-line">
+            <h3 className="font-display text-2xl mb-4">Why Affordable?</h3>
+            <div className="space-y-5 text-lg text-ink-muted">
+              <p>
+                I don&rsquo;t think wedding videography should cost as much
+                as a month&rsquo;s rent. Couples are routinely quoted $1,500
+                and up for coverage that isn&rsquo;t meaningfully different
+                from what I offer at $699. So I built my pricing around what
+                I think is fair — without cutting quality anywhere.
+              </p>
+              <p>
+                I&rsquo;m also willing to work with your budget. If cost is
+                the only thing standing between you and having your day
+                filmed, reach out. Call, text, or email — let&rsquo;s figure
+                it out together.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 pt-10 border-t border-line">
+            <h3 className="font-display text-2xl mb-4">Why Do I Film With My Phone?</h3>
+            <div className="space-y-5 text-lg text-ink-muted">
+              <p>
+                I&rsquo;ll say this with humility: people are consistently
+                surprised by what I capture. I&rsquo;ve always believed
+                it&rsquo;s not the camera in your hand, it&rsquo;s the person
+                behind it. Someone who knows what they&rsquo;re doing can
+                tell a story beautifully with almost any tool — and I bring
+                15+ years of that knowledge to every wedding I shoot.
+              </p>
+              <p>
+                Don&rsquo;t just take my word for it — watch a few of my
+                wedding films first. Then decide if the camera matters.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-28">
-        <div className="mx-auto max-w-[1180px] px-8">
-          <div className="text-center max-w-xl mx-auto mb-16">
-            <span className="font-ui text-xs tracking-[0.35em] uppercase text-gold block mb-4.5">
-              Why Stewart Films
-            </span>
-            <h2 className="font-display text-4xl md:text-5xl font-medium">
-              Cinema, not coverage.
-            </h2>
-            <p className="mt-5 text-xl text-ink-muted">
-              We don&rsquo;t just film weddings — we direct attention toward
-              the moments that matter, so your film feels like a story rather
-              than a highlight reel.
-            </p>
+      <section id="media" className="py-24 border-t border-line bg-bg-alt">
+        <div className="mx-auto max-w-[720px] px-6">
+          <h2 className="font-display text-3xl sm:text-4xl mb-8 text-center">
+            Video Preview
+          </h2>
+          <div className="aspect-video border border-line flex items-center justify-center bg-bg">
+            <div className="w-16 h-16 rounded-full border border-accent text-accent flex items-center justify-center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {FEATURES.map((f) => (
-              <div key={f.title} className="text-center">
-                <div className="w-14 h-14 rounded-full border border-gold text-gold flex items-center justify-center mx-auto mb-6.5">
-                  {f.icon}
+      <section id="packages" className="py-24 border-t border-line">
+        <div className="mx-auto max-w-[720px] px-6">
+          <h2 className="font-display text-3xl sm:text-4xl mb-10">Packages</h2>
+
+          <div className="space-y-10">
+            {PACKAGES.map((pkg) => (
+              <div key={pkg.name} className="pb-10 border-b border-line">
+                <div className="flex items-baseline justify-between gap-4">
+                  <h3 className="font-display text-2xl">{pkg.name}</h3>
+                  <span className="font-display text-2xl text-accent">{pkg.price}</span>
                 </div>
-                <h3 className="font-display text-2xl font-semibold mb-3">{f.title}</h3>
-                <p className="text-ink-muted">{f.body}</p>
+                <p className="mt-3 text-lg text-ink-muted">{pkg.body}</p>
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      <section className="py-28 bg-bg-alt">
-        <div className="mx-auto max-w-[1180px] px-8">
-          <div className="text-center max-w-xl mx-auto mb-16">
-            <span className="font-ui text-xs tracking-[0.35em] uppercase text-gold block mb-4.5">
-              Recent Work
+          <p className="mt-10 text-lg text-ink-muted">
+            <span className="font-ui text-xs tracking-[0.15em] uppercase text-ink block mb-2">
+              Flexible Pricing
             </span>
-            <h2 className="font-display text-4xl md:text-5xl font-medium">
-              A few of our favorite stories.
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {FEATURED_FILMS.map((film) => (
-              <Link
-                key={film.name}
-                href="/portfolio"
-                className="group relative block overflow-hidden aspect-[4/5]"
-              >
-                <Image
-                  src={film.image}
-                  alt={`Wedding film still, ${film.place}`}
-                  fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-[1.08]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-bg/95 via-transparent to-transparent flex flex-col justify-end p-7">
-                  <div className="w-13.5 h-13.5 rounded-full border border-gold text-gold flex items-center justify-center mb-4.5 opacity-0 translate-y-2.5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                  <div className="font-display text-xl">{film.name}</div>
-                  <div className="font-ui text-[11px] tracking-[0.2em] uppercase text-gold mt-1.5">
-                    {film.place}
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-28">
-        <div className="mx-auto max-w-[1180px] px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <blockquote className="font-display italic text-2xl md:text-3xl leading-relaxed">
-              &ldquo;We didn&rsquo;t just get a wedding video — we got a piece
-              of art that makes us cry happy tears every single time we watch
-              it. Stewart Films understood us before we even had to explain.&rdquo;
-            </blockquote>
-            <cite className="block mt-7 font-ui not-italic text-xs tracking-[0.2em] uppercase text-gold">
-              Elena &amp; Marco &middot; Married September 2025
-            </cite>
-          </div>
-        </div>
-      </section>
-
-      <section
-        className="text-center py-32 bg-center bg-cover bg-fixed"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(12,12,12,0.75), rgba(12,12,12,0.75)), url('https://picsum.photos/id/1039/1800/700')",
-        }}
-      >
-        <div className="mx-auto max-w-[1180px] px-8">
-          <h2 className="font-display text-4xl md:text-5xl font-medium mb-6">
-            Let&rsquo;s tell your story.
-          </h2>
-          <p className="text-xl text-ink-muted mb-11">
-            We take a limited number of weddings each year to give every
-            couple our full attention.
+            Every wedding is different, and so is every budget. Call or text
+            me directly and let&rsquo;s build a package that works for you.
           </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2.5 font-ui text-[13px] tracking-[0.2em] uppercase px-8 py-4 bg-gold text-[#14120f] border border-gold hover:bg-transparent hover:text-ink transition-colors"
-          >
-            Inquire About Your Date
-          </Link>
+
+          <div className="mt-16 pt-12 border-t border-line">
+            <h2 className="font-display text-3xl sm:text-4xl mb-8">FAQs</h2>
+            <div className="space-y-8">
+              {FAQS.map((faq) => (
+                <div key={faq.q}>
+                  <h3 className="font-ui text-sm tracking-wide font-medium mb-2">{faq.q}</h3>
+                  <p className="text-lg text-ink-muted">{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </>

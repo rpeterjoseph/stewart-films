@@ -18,12 +18,9 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Stewart Films — Wedding Videography",
-    template: "%s — Stewart Films",
-  },
+  title: "Stewart Films — Affordable Wedding Videography in Greenville, SC",
   description:
-    "Stewart Films creates timeless, cinematic wedding films for couples who want their story told beautifully.",
+    "Wedding videography in Greenville and the Upstate of South Carolina starting at $699. Call or text for flexible pricing.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
