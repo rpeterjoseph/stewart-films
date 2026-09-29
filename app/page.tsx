@@ -9,9 +9,9 @@ const BTN_OUTLINE_LIGHT =
 const EYEBROW = "font-ui text-xs tracking-[0.3em] uppercase text-accent block";
 
 const FILMS = [
-  { title: "Joseph & Anna's Wedding", year: "2023" },
-  { title: "The Stanley's Wedding", year: "2024" },
-  { title: "Alex & Shiloh's Wedding", year: "2025" },
+  { title: "Joseph & Anna's Wedding", year: "2023", driveId: "1DOCu8oSeC79tIfV-GXwgeKjCVNIYbJZm" },
+  { title: "The Stanley's Wedding", year: "2024", driveId: null },
+  { title: "Alex & Shiloh's Wedding", year: "2025", driveId: null },
 ];
 
 const PACKAGES = [
@@ -123,15 +123,22 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {FILMS.map((film) => (
-              <div key={film.title} className="group relative aspect-[4/5] overflow-hidden">
-                <PhotoPlaceholder label="Video Placeholder" className="absolute inset-0" dark />
-                <div className="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-ink/90 via-transparent to-transparent">
-                  <div className="w-12 h-12 rounded-full border border-bg text-bg flex items-center justify-center mb-4">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                  <div className="font-display text-lg text-bg">{film.title}</div>
+              <div key={film.title}>
+                <div className="relative aspect-video overflow-hidden">
+                  {film.driveId ? (
+                    <iframe
+                      src={`https://drive.google.com/file/d/${film.driveId}/preview`}
+                      className="absolute inset-0 w-full h-full border-0"
+                      allow="autoplay"
+                      allowFullScreen
+                      title={film.title}
+                    />
+                  ) : (
+                    <PhotoPlaceholder label="Video Placeholder" className="absolute inset-0" dark />
+                  )}
+                </div>
+                <div className="mt-5">
+                  <div className="font-display text-lg">{film.title}</div>
                   <div className="font-ui text-[11px] tracking-[0.2em] uppercase text-accent mt-1">
                     {film.year}
                   </div>
