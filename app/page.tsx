@@ -287,7 +287,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {FAQS.map((faq) => (
                 <div key={faq.q} className="border border-line p-7">
-                  <h3 className="font-display text-xl mb-2.5">
+                  <h3 className="font-ui text-sm tracking-[0.08em] uppercase font-semibold mb-3">
                     {faq.q}
                   </h3>
                   <p className="text-ink-muted">{faq.a}</p>
