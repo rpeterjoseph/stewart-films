@@ -18,8 +18,8 @@
   --color-line: var(--color-border);
 
   --font-display: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
-  --font-body: var(--font-instrument-serif), Georgia, serif;
-  --font-ui: var(--font-public-sans), "Helvetica Neue", Arial, sans-serif;
+  --font-body: var(--font-instrument-sans), "Helvetica Neue", Arial, sans-serif;
+  --font-ui: var(--font-work-sans), "Helvetica Neue", Arial, sans-serif;
 }
 
 html {

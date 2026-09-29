@@ -1,11 +1,11 @@
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 
 const BTN_PRIMARY =
-  "inline-flex items-center gap-2 font-ui text-xs tracking-[0.15em] uppercase px-7 py-3.5 bg-accent text-white hover:bg-ink transition-colors";
+  "inline-flex items-center gap-2 text-xs tracking-[0.15em] uppercase px-7 py-3.5 bg-accent text-white hover:bg-ink transition-colors";
 const BTN_OUTLINE =
-  "inline-flex items-center gap-2 font-ui text-xs tracking-[0.15em] uppercase px-7 py-3.5 border border-ink text-ink hover:bg-ink hover:text-bg transition-colors";
+  "inline-flex items-center gap-2 text-xs tracking-[0.15em] uppercase px-7 py-3.5 border border-ink text-ink hover:bg-ink hover:text-bg transition-colors";
 const BTN_OUTLINE_LIGHT =
-  "inline-flex items-center gap-2 font-ui text-xs tracking-[0.15em] uppercase px-7 py-3.5 border border-bg text-bg hover:bg-bg hover:text-ink transition-colors";
+  "inline-flex items-center gap-2 text-xs tracking-[0.15em] uppercase px-7 py-3.5 border border-bg text-bg hover:bg-bg hover:text-ink transition-colors";
 const EYEBROW = "font-ui text-xs tracking-[0.3em] uppercase text-accent block";
 
 const FILMS = [
@@ -286,7 +286,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {FAQS.map((faq) => (
                 <div key={faq.q} className="border border-line p-7">
-                  <h3 className="font-ui text-sm tracking-wide font-semibold mb-2.5">
+                  <h3 className="font-display text-xl mb-2.5">
                     {faq.q}
                   </h3>
                   <p className="text-ink-muted">{faq.a}</p>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Public_Sans } from "next/font/google";
+import { Instrument_Serif, Instrument_Sans, Work_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -11,10 +11,16 @@ const instrumentSerif = Instrument_Serif({
   style: ["normal", "italic"],
 });
 
-const publicSans = Public_Sans({
-  variable: "--font-public-sans",
+const instrumentSans = Instrument_Sans({
+  variable: "--font-instrument-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
+});
+
+const workSans = Work_Sans({
+  variable: "--font-work-sans",
+  subsets: ["latin"],
+  weight: ["500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${instrumentSerif.variable} ${publicSans.variable} h-full antialiased`}
+      className={`${instrumentSerif.variable} ${instrumentSans.variable} ${workSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg text-ink">
         <Header />
