@@ -21,9 +21,9 @@
   --color-gold-soft: var(--color-gold-soft);
   --color-line: var(--color-border);
 
-  --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
-  --font-body: var(--font-cormorant), Georgia, serif;
-  --font-ui: var(--font-jost), "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-instrument-serif), Georgia, serif;
+  --font-ui: var(--font-public-sans), "Helvetica Neue", Arial, sans-serif;
 }
 
 html {
