@@ -16,7 +16,12 @@ const FILMS = [
     driveId: "1DOCu8oSeC79tIfV-GXwgeKjCVNIYbJZm",
     thumbnail: "/films/joseph-anna.webp",
   },
-  { title: "The Stanley's Wedding", year: "2024", driveId: "1IOYXCJJG4jhdNKFzAz8fe0XeJKjLBmOQ" },
+  {
+    title: "The Stanley's Wedding",
+    year: "2024",
+    driveId: "1IOYXCJJG4jhdNKFzAz8fe0XeJKjLBmOQ",
+    thumbnail: "/films/stanleys.webp",
+  },
   {
     title: "Alex & Shiloh's Wedding",
     year: "2025",
