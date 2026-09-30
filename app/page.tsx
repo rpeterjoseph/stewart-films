@@ -133,7 +133,7 @@ export default function HomePage() {
       <section id="media" className="py-24 border-b border-line bg-bg-alt">
         <div className="mx-auto max-w-[1160px] px-6">
           <div className="text-center mb-14">
-            <span className={`${EYEBROW} mb-4`}>Stewart Films</span>
+            <span className={`${EYEBROW} mb-4`}>Stewart Storytelling</span>
             <h2 className="font-display text-3xl sm:text-4xl">Films</h2>
           </div>
 
@@ -172,11 +172,11 @@ export default function HomePage() {
 
             <div className="mt-8 sm:mt-0">
               <span className={`${EYEBROW} mb-3`}>About</span>
-              <h2 className="font-display text-3xl sm:text-4xl mb-7">Stewart Ramakuri</h2>
+              <h2 className="font-display text-3xl sm:text-4xl mb-7">Stewart</h2>
 
               <div className="space-y-5 text-lg text-ink-muted">
                 <p>
-                  Hey, I&rsquo;m Stewart Ramakuri, a wedding videographer based
+                  Hey, I&rsquo;m Stewart, a wedding videographer based
                   in Greenville, SC. I grew up in Hyderabad, India, where I
                   got my start behind the camera doing anything but weddings —
                   recording my dad&rsquo;s sermons for YouTube, filming church

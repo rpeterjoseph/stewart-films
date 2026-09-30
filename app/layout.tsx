@@ -24,7 +24,7 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Stewart Films — Affordable Wedding Videography in Greenville, SC",
+  title: "Stewart Storytelling — Affordable Wedding Videography in Greenville, SC",
   description:
     "Wedding videography in Greenville and the Upstate of South Carolina starting at $699. Call or text for flexible pricing.",
 };
