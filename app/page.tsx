@@ -234,7 +234,7 @@ export default function HomePage() {
               <div key={film.title}>
                 <FilmTile title={film.title} driveId={film.driveId} thumbnail={film.thumbnail} />
                 <div className="mt-5">
-                  <div className="font-display text-lg">{film.title}</div>
+                  <div className="font-display text-2xl">{film.title}</div>
                   <div className="font-ui text-[11px] tracking-[0.2em] uppercase text-accent mt-1">
                     {film.year}
                   </div>
