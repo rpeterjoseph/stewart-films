@@ -403,13 +403,12 @@ export default function HomePage() {
       <section id="reviews" className="py-24 bg-bg-alt">
         <div className="mx-auto max-w-[960px] px-6">
           <div className="text-center mb-14">
-            <span className={`${EYEBROW} mb-4`}>Client&rsquo;s</span>
-            <h2 className="font-display text-3xl sm:text-4xl">Reviews</h2>
+            <h2 className="font-display text-3xl sm:text-4xl">Client Reviews</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-line">
             {REVIEWS.map((group) => (
-              <div key={group.couple} className="border border-line p-8">
+              <div key={group.couple} className="py-10 sm:py-0 sm:px-10 sm:first:pl-0 sm:last:pr-0">
                 <div className="font-display text-xl mb-5">{group.couple}</div>
                 <div className="space-y-6">
                   {group.quotes.map((quote) => (
