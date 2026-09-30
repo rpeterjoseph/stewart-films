@@ -103,7 +103,7 @@ export default function HomePage() {
 
           <div className="mt-9 flex flex-wrap justify-center gap-4">
             <a href="#packages" className={BTN_PRIMARY}>See Packages</a>
-            <a href="tel:+15555550142" className={BTN_OUTLINE}>Call or Text</a>
+            <a href="tel:+18643265647" className={BTN_OUTLINE}>Call or Text</a>
           </div>
 
           <div className="mt-14 flex flex-wrap justify-center gap-6">
@@ -213,8 +213,15 @@ export default function HomePage() {
                   <p>
                     I&rsquo;m also willing to work with your budget. If cost
                     is the only thing standing between you and having your
-                    day filmed, reach out. Call, text, or email — let&rsquo;s
-                    figure it out together.
+                    day filmed, reach out. Call or text{" "}
+                    <a href="tel:+18643265647" className="text-accent hover:underline">
+                      (864) 326-5647
+                    </a>
+                    , or email{" "}
+                    <a href="mailto:stewartramakuri@gmail.com" className="text-accent hover:underline">
+                      stewartramakuri@gmail.com
+                    </a>
+                    {" "}— let&rsquo;s figure it out together.
                   </p>
                 </div>
               </div>
@@ -253,7 +260,7 @@ export default function HomePage() {
               So is every budget. Call or text me directly and let&rsquo;s
               build a package that works for you.
             </p>
-            <a href="tel:+15555550142" className={BTN_OUTLINE_LIGHT}>Call or Text</a>
+            <a href="tel:+18643265647" className={BTN_OUTLINE_LIGHT}>Call or Text</a>
           </div>
         </div>
       </section>
@@ -274,7 +281,7 @@ export default function HomePage() {
                 <h3 className="font-display text-2xl mb-2">{pkg.name}</h3>
                 <div className="font-display text-4xl text-accent mb-5">{pkg.price}</div>
                 <p className="text-ink-muted flex-1">{pkg.body}</p>
-                <a href="tel:+15555550142" className={`${BTN_OUTLINE} mt-8 justify-center`}>
+                <a href="tel:+18643265647" className={`${BTN_OUTLINE} mt-8 justify-center`}>
                   Book This Package
                 </a>
               </div>

@@ -7,7 +7,7 @@ const LEFT_LINKS = [
 const RIGHT_LINKS = [
   { href: "#packages", label: "Packages" },
   { href: "#faq", label: "FAQ" },
-  { href: "tel:+15555550142", label: "Contact" },
+  { href: "tel:+18643265647", label: "Contact" },
 ];
 
 export default function Header() {
