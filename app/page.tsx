@@ -40,9 +40,9 @@ const PACKAGES = [
   },
   {
     name: "Out-of-State Package",
-    price: "$999",
-    badge: "Travel included",
-    body: "Same great coverage for weddings outside South Carolina, travel included.",
+    price: "$699 + Travel",
+    badge: "Quoted upfront, no surprises",
+    body: "Same great coverage for weddings outside South Carolina, plus travel — quoted upfront so there are no surprises.",
   },
 ];
 
@@ -53,7 +53,7 @@ const FAQS = [
   },
   {
     q: "Do you travel outside South Carolina?",
-    a: "Yes — the out-of-state package is $999 and covers travel.",
+    a: "Yes — the out-of-state package is $699 plus travel, quoted upfront so there are no surprises.",
   },
   {
     q: "What areas do you serve?",
@@ -117,7 +117,7 @@ export default function HomePage() {
               <div className="font-ui text-xs tracking-[0.15em] uppercase text-ink-muted">
                 Out-of-State Package
               </div>
-              <div className="font-display text-3xl mt-1.5">$999</div>
+              <div className="font-display text-3xl mt-1.5">$699 + Travel</div>
             </div>
           </div>
 
