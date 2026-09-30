@@ -342,7 +342,12 @@ export default function HomePage() {
       </section>
 
       <section className="relative">
-        <PhotoPlaceholder label="Banner Photo" className="py-28" dark />
+        <PhotoPlaceholder
+          label="Banner Photo"
+          className="min-h-[480px] sm:min-h-[560px]"
+          dark
+          showLabel={false}
+        />
         <div className="absolute inset-0 flex items-center justify-center text-center">
           <div className="max-w-xl px-6">
             <h2 className="font-display text-3xl sm:text-4xl text-bg mb-5">
