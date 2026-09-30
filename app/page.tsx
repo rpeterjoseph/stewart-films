@@ -94,7 +94,43 @@ const FAQS = [
   },
 ];
 
-const REVIEWS = [1, 2];
+const REVIEWS = [
+  {
+    couple: "Joseph & Anna",
+    quotes: [
+      {
+        text: "Hey, just watched it! Dude this is fantastic! We are so grateful brother",
+        name: "Joseph",
+      },
+      {
+        text: "WONDERFUL!!! Thanks so much Stewart! Thanks for capturing everything so beautifully!!!!",
+        name: "Anna",
+      },
+    ],
+  },
+  {
+    couple: "The Stanleys",
+    quotes: [
+      {
+        text: "Wholeheartedly thankful for this day!!! Video credit goes out to Stewart, me and my wife are so grateful for the video clip and the time spent in piecing it together.",
+        name: "D'Angelo",
+      },
+    ],
+  },
+  {
+    couple: "Alex & Shiloh",
+    quotes: [
+      {
+        text: "We finally watched the wedding video. We loved it!!!! Thank you sooo much for doing that for us Stewart!! It was really well done!",
+        name: "Shiloh",
+      },
+      {
+        text: "Ditto, it was amazing, you are very talented sir! Thank you so much for doing that, we can't appreciate you enough!",
+        name: "Alex",
+      },
+    ],
+  },
+];
 
 export default function HomePage() {
   return (
@@ -344,27 +380,19 @@ export default function HomePage() {
             <h2 className="font-display text-3xl sm:text-4xl">Reviews</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-            {REVIEWS.map((i) => (
-              <div key={i}>
-                <div className="relative aspect-video">
-                  <PhotoPlaceholder label="Review Video Placeholder" className="absolute inset-0" dark />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-14 h-14 rounded-full border border-bg text-bg flex items-center justify-center">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
+            {REVIEWS.map((group) => (
+              <div key={group.couple} className="border border-line p-8">
+                <div className="font-display text-xl mb-5">{group.couple}</div>
+                <div className="space-y-6">
+                  {group.quotes.map((quote) => (
+                    <div key={quote.name}>
+                      <p className="text-ink-muted italic">&ldquo;{quote.text}&rdquo;</p>
+                      <div className="font-ui text-[11px] tracking-[0.2em] uppercase text-accent mt-2.5">
+                        {quote.name}
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="mt-5">
-                  <div className="font-display text-xl">Couple Name</div>
-                  <div className="font-ui text-[11px] tracking-[0.2em] uppercase text-accent mt-1 mb-3">
-                    Venue, City
-                  </div>
-                  <p className="text-ink-muted italic">
-                    Client review coming soon — add a couple&rsquo;s testimonial here.
-                  </p>
+                  ))}
                 </div>
               </div>
             ))}
