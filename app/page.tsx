@@ -1,5 +1,6 @@
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import FilmTile from "@/components/FilmTile";
+import FaqAccordion from "@/components/FaqAccordion";
 
 const BTN_PRIMARY =
   "inline-flex items-center gap-2 text-xs tracking-[0.15em] uppercase px-7 py-3.5 bg-accent text-white hover:bg-ink transition-colors";
@@ -52,16 +53,44 @@ const FAQS = [
     a: "Rates in the Upstate typically run $1,500 or more. I offer full in-state coverage for $699, with flexible pricing available.",
   },
   {
+    q: "What's included in the $699 package?",
+    a: "I'll be there for your ceremony and reception, capturing the moments that actually matter — vows, first dance, toasts, the laughter and little unscripted things you'll want to remember. Afterward, I edit everything into a polished highlight film set to music, so you get a video that feels like your day, not just a recording of it. If you'd also like the full, unedited raw footage, that's available too — just ask.",
+  },
+  {
+    q: "How long until we get our highlight film?",
+    a: "You'll have your edited highlight film in 2 weeks. If anything comes up that pushes the timeline, I'll let you know right away — you won't be left guessing or checking your inbox every day.",
+  },
+  {
+    q: "Do you require a deposit? What's your cancellation policy?",
+    a: "A $150 deposit holds your date, with the remaining balance due at least one week before your wedding. If your plans change before the wedding, there's no cancellation fee — your deposit and any payment made will be fully refunded. Once the wedding has taken place and the work is complete, refunds aren't available at that point, since the service has already been delivered.",
+  },
+  {
+    q: "How far in advance should I book?",
+    a: "Ideally, I'd love to hear from you 1–2 months out so your date is locked in early — but wedding planning doesn't always work on a schedule, and I often have openings even close to the date. If you're not sure whether I'm available, reach out anyway.",
+  },
+  {
+    q: "Do we get the raw footage, or just the edited film?",
+    a: "You'll get the fully edited highlight film as your main video. Raw footage is also included at no additional cost — just let me know if you'd like it, and I'll send it your way.",
+  },
+  {
+    q: "What happens if something goes wrong with your equipment on the day?",
+    a: "I always bring backup gear, so a technical issue never means missing a moment of your day.",
+  },
+  {
+    q: "Do you work alongside our photographer?",
+    a: "Yes — I coordinate with your photographer beforehand so we're never in each other's shots, and every key moment gets captured from the best angle.",
+  },
+  {
     q: "Do you travel outside South Carolina?",
-    a: "Yes — the out-of-state package is $699 plus travel, quoted upfront so there are no surprises.",
+    a: "Yes — out-of-state weddings are the same $699 rate, plus travel, quoted upfront with no surprises.",
   },
   {
     q: "What areas do you serve?",
     a: "Greenville, Spartanburg, Anderson, Easley, and the surrounding Upstate SC area, plus out-of-state weddings.",
   },
   {
-    q: "How far in advance should I book?",
-    a: "Honestly, it depends. The quicker the better! We can make something work.",
+    q: "How do we pay you?",
+    a: "I accept Venmo. If that doesn't work for you, just let me know and I'm happy to find another way.",
   },
 ];
 
@@ -301,15 +330,8 @@ export default function HomePage() {
               <span className={`${EYEBROW} mb-4`}>Questions</span>
               <h2 className="font-display text-3xl sm:text-4xl">FAQs</h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {FAQS.map((faq) => (
-                <div key={faq.q} className="border border-line p-7">
-                  <h3 className="font-ui text-sm tracking-[0.08em] uppercase font-semibold mb-3">
-                    {faq.q}
-                  </h3>
-                  <p className="text-ink-muted">{faq.a}</p>
-                </div>
-              ))}
+            <div className="max-w-[760px] mx-auto">
+              <FaqAccordion items={FAQS} />
             </div>
           </div>
         </div>
