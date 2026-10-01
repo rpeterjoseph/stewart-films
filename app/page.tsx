@@ -38,7 +38,7 @@ const PACKAGES = [
     price: "$699",
     badge: "Save $800+ vs. market",
     body:
-      "Full-day wedding video coverage anywhere in South Carolina — hours of coverage, ceremony and reception, and an edited highlight film.",
+      "Full-day wedding video coverage anywhere in South Carolina — including ceremony and reception coverage, an edited highlight film, and raw footage available upon request.",
   },
   {
     name: "Out-of-State Package",
