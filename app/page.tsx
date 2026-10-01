@@ -136,37 +136,15 @@ const REVIEWS = [
 export default function HomePage() {
   return (
     <>
-      <section id="home" className="relative grid grid-cols-3 h-[55vh] sm:h-[70vh] min-h-[320px] sm:min-h-[420px]">
-        <div className="relative">
-          <Image
-            src="/films/joseph-anna.webp"
-            alt="Joseph & Anna's Wedding"
-            fill
-            sizes="34vw"
-            priority
-            className="object-cover"
-          />
-        </div>
-        <div className="relative">
-          <Image
-            src="/films/stanleys.webp"
-            alt="The Stanley's Wedding"
-            fill
-            sizes="34vw"
-            priority
-            className="object-cover"
-          />
-        </div>
-        <div className="relative">
-          <Image
-            src="/films/alex-shiloh.webp"
-            alt="Alex & Shiloh's Wedding"
-            fill
-            sizes="34vw"
-            priority
-            className="object-cover"
-          />
-        </div>
+      <section id="home" className="relative h-[55vh] sm:h-[70vh] min-h-[320px] sm:min-h-[420px]">
+        <Image
+          src="/photos/hero.webp"
+          alt="Wedding ceremony"
+          fill
+          sizes="100vw"
+          priority
+          className="object-cover"
+        />
         <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink/60 to-transparent pointer-events-none" />
         <a
           href="#intro"
