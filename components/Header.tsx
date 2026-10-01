@@ -33,7 +33,7 @@ export default function Header() {
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="text-accent mb-1.5">
             <path d="M12 3l9 18H3z" strokeWidth="1.5" />
           </svg>
-          <span className="font-display text-2xl leading-none">Stewart Storytelling</span>
+          <span className="font-display text-2xl leading-none">Stewart&rsquo;s Storytelling</span>
           <span className="font-ui text-[9px] tracking-[0.3em] uppercase text-ink-muted mt-1">
             Wedding Videography
           </span>

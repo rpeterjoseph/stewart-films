@@ -203,7 +203,7 @@ export default function HomePage() {
       <section id="media" className="py-24 border-b border-line bg-bg-alt">
         <div className="mx-auto max-w-[1160px] px-6">
           <div className="text-center mb-14">
-            <span className={`${EYEBROW} mb-4`}>Stewart Storytelling</span>
+            <span className={`${EYEBROW} mb-4`}>Stewart&rsquo;s Storytelling</span>
             <h2 className="font-display text-3xl sm:text-4xl">Films</h2>
           </div>
 

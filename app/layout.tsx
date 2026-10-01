@@ -24,7 +24,7 @@ const workSans = Work_Sans({
 });
 
 const SITE_URL = "https://www.stewartstorytelling.com";
-const SITE_TITLE = "Stewart Storytelling — Affordable Wedding Videography in Greenville, SC";
+const SITE_TITLE = "Stewart's Storytelling — Affordable Wedding Videography in Greenville, SC";
 const SITE_DESCRIPTION =
   "Wedding videography in Greenville and the Upstate of South Carolina starting at $699. Call or text for flexible pricing.";
 
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
-    siteName: "Stewart Storytelling",
+    siteName: "Stewart's Storytelling",
     locale: "en_US",
     type: "website",
   },
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 const LOCAL_BUSINESS_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Stewart Storytelling",
+  name: "Stewart's Storytelling",
   description: SITE_DESCRIPTION,
   url: SITE_URL,
   telephone: "+18643265647",

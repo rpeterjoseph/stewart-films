@@ -1,6 +1,6 @@
-# Stewart Storytelling
+# Stewart's Storytelling
 
-Marketing site for Stewart Storytelling, a wedding videographer in Greenville, SC.
+Marketing site for Stewart's Storytelling, a wedding videographer in Greenville, SC.
 Built with [Next.js](https://nextjs.org) (App Router) and
 [Tailwind CSS v4](https://tailwindcss.com), ready to deploy on
 [Vercel](https://vercel.com).

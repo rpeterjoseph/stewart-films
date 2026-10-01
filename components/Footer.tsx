@@ -26,7 +26,7 @@ export default function Footer() {
 
       <div className="border-t border-line py-10">
         <div className="mx-auto max-w-[1160px] px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-          <div className="font-display text-xl">Stewart Storytelling</div>
+          <div className="font-display text-xl">Stewart&rsquo;s Storytelling</div>
           <div className="text-xs text-ink-muted space-y-1.5">
             <p>Greenville &amp; the Upstate of South Carolina</p>
             <p>
@@ -40,7 +40,7 @@ export default function Footer() {
             </p>
           </div>
           <p className="text-xs text-ink-muted">
-            &copy; {new Date().getFullYear()} Stewart Storytelling. All rights reserved.
+            &copy; {new Date().getFullYear()} Stewart&rsquo;s Storytelling. All rights reserved.
           </p>
         </div>
       </div>
