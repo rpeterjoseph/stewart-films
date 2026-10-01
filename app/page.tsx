@@ -168,7 +168,7 @@ export default function HomePage() {
             <span className="text-accent italic">Without Breaking The Bank</span>
           </h1>
           <p className="mt-7 text-lg text-ink-muted max-w-lg mx-auto">
-            Willing to work with the price! Call or text me.
+            Willing to work with the price! Call or text&nbsp;me.
           </p>
 
           <div className="mt-9 flex flex-wrap justify-center gap-4">
