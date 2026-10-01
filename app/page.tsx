@@ -230,22 +230,14 @@ export default function HomePage() {
       <section id="about" className="py-24 border-b border-line">
         <div className="mx-auto max-w-[1160px] px-6">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-16 items-start">
-            <div className="relative">
-              <div className="relative aspect-[4/5]">
-                <Image
-                  src="/photos/stewart.jpg"
-                  alt="Stewart"
-                  fill
-                  sizes="(min-width: 1024px) 34vw, 90vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="hidden sm:block absolute -bottom-8 -right-8 w-2/3">
-                <PhotoPlaceholder
-                  label="Behind-the-Scenes"
-                  className="aspect-video border-4 border-bg shadow-lg"
-                />
-              </div>
+            <div className="relative aspect-[4/5]">
+              <Image
+                src="/photos/stewart.jpg"
+                alt="Stewart"
+                fill
+                sizes="(min-width: 1024px) 34vw, 90vw"
+                className="object-cover"
+              />
             </div>
 
             <div className="mt-8 sm:mt-0">
