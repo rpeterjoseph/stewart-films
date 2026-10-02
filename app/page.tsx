@@ -2,6 +2,7 @@ import Image from "next/image";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import FilmTile from "@/components/FilmTile";
 import FaqAccordion from "@/components/FaqAccordion";
+import { EMAIL, EMAIL_MAILTO, PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 
 const BTN_PRIMARY =
   "inline-flex items-center gap-2 text-xs tracking-[0.15em] uppercase px-7 py-3.5 bg-accent text-white hover:bg-ink transition-colors";
@@ -173,7 +174,7 @@ export default function HomePage() {
 
           <div className="mt-9 flex flex-wrap justify-center gap-4">
             <a href="#packages" className={BTN_PRIMARY}>See Packages</a>
-            <a href="tel:+18643265647" className={BTN_OUTLINE}>Call or Text</a>
+            <a href={PHONE_TEL} className={BTN_OUTLINE}>Call or Text</a>
           </div>
 
           <div className="mt-14 flex flex-wrap justify-center gap-6">
@@ -284,12 +285,12 @@ export default function HomePage() {
                     I&rsquo;m also willing to work with your budget. If cost
                     is the only thing standing between you and having your
                     day filmed, reach out. Call or text{" "}
-                    <a href="tel:+18643265647" className="text-accent hover:underline">
-                      (864) 326-5647
+                    <a href={PHONE_TEL} className="text-accent hover:underline">
+                      {PHONE_DISPLAY}
                     </a>
                     , or email{" "}
-                    <a href="mailto:stewartramakuri@gmail.com" className="text-accent hover:underline">
-                      stewartramakuri@gmail.com
+                    <a href={EMAIL_MAILTO} className="text-accent hover:underline">
+                      {EMAIL}
                     </a>
                     {" "}— let&rsquo;s figure it out together.
                   </p>
@@ -335,7 +336,7 @@ export default function HomePage() {
               So is every budget. Call or text me directly and let&rsquo;s
               build a package that works for you.
             </p>
-            <a href="tel:+18643265647" className={BTN_OUTLINE_LIGHT}>Call or Text</a>
+            <a href={PHONE_TEL} className={BTN_OUTLINE_LIGHT}>Call or Text</a>
           </div>
         </div>
       </section>
@@ -356,7 +357,7 @@ export default function HomePage() {
                 <h3 className="font-display text-2xl mb-2">{pkg.name}</h3>
                 <div className="font-display text-4xl text-accent mb-5">{pkg.price}</div>
                 <p className="text-ink-muted flex-1">{pkg.body}</p>
-                <a href="tel:+18643265647" className={`${BTN_OUTLINE} mt-8 justify-center`}>
+                <a href={PHONE_TEL} className={`${BTN_OUTLINE} mt-8 justify-center`}>
                   Book This Package
                 </a>
               </div>

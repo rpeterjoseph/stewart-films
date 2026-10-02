@@ -1,3 +1,5 @@
+import { EMAIL, EMAIL_MAILTO, PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
+
 export default function Footer() {
   return (
     <footer>
@@ -10,15 +12,15 @@ export default function Footer() {
             Ready to capture your day?
           </h2>
           <a
-            href="tel:+18643265647"
+            href={PHONE_TEL}
             className="inline-flex items-center gap-2 text-xs tracking-[0.15em] uppercase px-8 py-4 bg-accent text-white hover:bg-bg hover:text-ink transition-colors"
           >
-            Call or Text (864) 326-5647
+            Call or Text {PHONE_DISPLAY}
           </a>
           <p className="mt-5 text-sm text-bg/70">
             or email{" "}
-            <a href="mailto:stewartramakuri@gmail.com" className="hover:text-accent transition-colors">
-              stewartramakuri@gmail.com
+            <a href={EMAIL_MAILTO} className="hover:text-accent transition-colors">
+              {EMAIL}
             </a>
           </p>
         </div>
@@ -30,12 +32,12 @@ export default function Footer() {
           <div className="text-xs text-ink-muted space-y-1.5">
             <p>Greenville &amp; the Upstate of South Carolina</p>
             <p>
-              <a href="tel:+18643265647" className="hover:text-accent transition-colors">
-                (864) 326-5647
+              <a href={PHONE_TEL} className="hover:text-accent transition-colors">
+                {PHONE_DISPLAY}
               </a>
               {" "}&middot;{" "}
-              <a href="mailto:stewartramakuri@gmail.com" className="hover:text-accent transition-colors">
-                stewartramakuri@gmail.com
+              <a href={EMAIL_MAILTO} className="hover:text-accent transition-colors">
+                {EMAIL}
               </a>
             </p>
           </div>

@@ -1,3 +1,5 @@
+import { PHONE_TEL } from "@/lib/contact";
+
 const LEFT_LINKS = [
   { href: "#about", label: "About" },
   { href: "#media", label: "Media" },
@@ -7,7 +9,7 @@ const LEFT_LINKS = [
 const RIGHT_LINKS = [
   { href: "#packages", label: "Packages" },
   { href: "#faq", label: "FAQ" },
-  { href: "tel:+18643265647", label: "Contact" },
+  { href: PHONE_TEL, label: "Contact" },
 ];
 
 export default function Header() {

@@ -3,6 +3,7 @@ import { Instrument_Serif, Instrument_Sans, Work_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import { EMAIL, PHONE_E164 } from "@/lib/contact";
 
 const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
@@ -53,8 +54,8 @@ const LOCAL_BUSINESS_JSON_LD = {
   name: "Stewart's Storytelling",
   description: SITE_DESCRIPTION,
   url: SITE_URL,
-  telephone: "+18643265647",
-  email: "stewartramakuri@gmail.com",
+  telephone: PHONE_E164,
+  email: EMAIL,
   priceRange: "$699-$999",
   areaServed: [
     "Greenville, SC",
